@@ -1,0 +1,5 @@
+<h1>All Students:</h1>
+
+<% @students.each do |s|%>
+<div> <%= link_to s.last_name, student_path(s.id) %> </div>
+<% end %>
