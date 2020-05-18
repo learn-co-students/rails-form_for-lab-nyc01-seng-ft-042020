@@ -1,0 +1,7 @@
+<html>
+<p>My Links</p>
+<%@school_class.each do |s_c|%>
+
+<p><%=link_to s_c.title, school_class_path(s_c.id)%>
+<%end%>
+</html>
