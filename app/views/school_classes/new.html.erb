@@ -1,0 +1,10 @@
+<h1>School Class Form</h1>
+<%= form_for @school_class do |f| %>
+    <%= f.label :title, "Title" %>
+    <%= f.text_field :title %>
+
+    <%= f.label :room_number, "Room_number" %>
+    <%= f.number_field :room_number %>
+
+<%= submit_tag "#{@school_class.new_record? ? 'Create' : 'Update'} School class" %>
+<% end %>
